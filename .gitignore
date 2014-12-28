@@ -1,0 +1,4 @@
+.idea
+.idea/*
+node_modules
+primary-documents-key-file.pem

@@ -1,0 +1,20 @@
+{
+  "name": "google-spreadsheet-river",
+  "version": "0.0.1",
+  "main": "./lib/main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Terrence Watson <parliamentaryterrence@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "chai": "^1.10.0",
+    "flux": "^2.0.1",
+    "google-spreadsheet-stream-reader": "^1.0.9",
+    "mocha": "^2.1.0",
+    "object-assign": "^2.0.0",
+    "redis-stream": "^0.1.0",
+    "sinon": "^1.12.2",
+    "sinon-chai": "^2.6.0"
+  }
+}
