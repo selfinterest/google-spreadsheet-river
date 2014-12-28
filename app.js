@@ -17,4 +17,14 @@ riverFactory
 
 var river = riverFactory.createRiver();
 
-river.synchronize();
+
+/*river.synchronize().then(function(info){
+
+   console.log(new Date(info.timestamp));
+});*/
+
+river.getLastSynchronized().then(function(time){
+   //console.log(typeof time);
+    console.log(new Date(time));
+});
+//river.synchronize();
