@@ -18,13 +18,25 @@ riverFactory
 var river = riverFactory.createRiver();
 
 
-/*river.synchronize().then(function(info){
-
-   console.log(new Date(info.timestamp));
+/*river.synchronize().then(function(){
+    console.log(arguments);
+   console.log("Done");
 });*/
 
 river.getLastSynchronized().then(function(time){
+    if(time){
+        console.log(new Date(time));
+    } else {
+        console.log("Not synchronized.");
+    }
    //console.log(typeof time);
-    console.log(new Date(time));
+
 });
-//river.synchronize();
+
+river.getNumberOfKeys().then(function(keys){
+    console.log(keys);
+});
+
+river.getAllValuesFromRedis().then(function(result){
+    console.log(result.keys);
+});
