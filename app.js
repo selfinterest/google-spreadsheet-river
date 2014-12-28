@@ -37,6 +37,11 @@ river.getNumberOfKeys().then(function(keys){
     console.log(keys);
 });
 
-river.getAllValuesFromRedis().then(function(result){
+/*river.getAll().then(function(result){
     console.log(result.keys);
-});
+});*/
+
+var stream = river.createStream();
+
+var fs = require("fs");
+stream.pipe(process.stdout);
